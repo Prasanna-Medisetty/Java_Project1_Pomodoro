@@ -39,7 +39,7 @@ public class PomodoroManager {
         }
 
         // ASCII confetti celebration
-        System.out.println(PURPLE + "\n🎉🎉🎉 Congratulations! 🎉🎉🎉" + RESET);
+        System.out.println(PURPLE + "\n🎉🎉🎉Yayyy🎓 You have completed your task. 🎉🎉🎉" + RESET);
         String[] celeb = {"💥 🎊 🎈 FocusQuest Celebration 🎈 🎊 💥"};
         for (String line : celeb) {
             System.out.println(YELLOW + line + RESET);

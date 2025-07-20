@@ -15,7 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         FileHandler fileHandler = new FileHandler();
 
-        System.out.println(CYAN + "👋 Welcome to FocusQuest! Please enter your username (should not be only digits):" + RESET);
+        System.out.println(CYAN + "👋 Welcome to FocusQuest! Please enter your username :" + RESET);
         String nameofuser;
         while (true) {
             nameofuser = scanner.nextLine().trim();
@@ -35,13 +35,13 @@ public class Main {
             String choice = scanner.nextLine().trim().toLowerCase();
             if (choice.equals("y")) {
                 user = loadedUser;
-                System.out.println(GREEN + "😊 Welcome back to FocusQuest, " + user.getUserName() + "! 😊" + RESET);
+                System.out.println(GREEN + "😊 Welcome back to FocusQuest " + user.getUserName() + "! 😊" + RESET);
             }
         }
 
         if (user == null) {
             user = new UserProfile(nameofuser);
-            System.out.println(GREEN + "😊 Welcome to FocusQuest, " + nameofuser + ", your personal productivity companion! 😊" + RESET);
+            System.out.println(GREEN + "😊 Welcome to FocusQuest " + nameofuser + ", your personal productivity companion! 😊" + RESET);
             System.out.println(PURPLE + "🚶‍➡️ \"Small steps every day lead to big results. Stay focused!\" 💵💰" + RESET);
         }
 
